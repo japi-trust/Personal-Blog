@@ -1,0 +1,297 @@
+
+
+body {
+  font-family: "Lucida Grande", "Arial", sans-serif;
+}
+
+.main-nav a {
+  box-sizing:border-box;
+  padding: 2.5rem 2rem;
+  font-variant: small-caps;
+  font-size: 1.5rem; 
+  justify-content:space-evenly;
+  padding-top: 0.75px;
+  z-index: 1;
+}
+
+
+.logo {
+width: 100%;
+height: 100%; 
+object-fit: cover;  
+text-align: left;  
+align-items:flex-start;
+padding: 2px;
+margin: 1px 2px; 
+} 
+
+
+.logo img {
+  max-width: 100%;
+}  
+
+blockquote{
+    border-left: solid  #070707;
+    padding: 0.5rem;
+    line-height: 2.5rem;
+}
+
+nav,
+.about-contact {
+    background-color: white;
+}
+
+a {
+  color: #07eeee;
+  text-decoration: none;
+} 
+
+a:hover {
+  color: #c3e6fc;
+}
+
+.about,.contact,.blog {
+  color: #0d0d0d;
+  padding: 10px 5px;
+    padding: 10px 5px;
+    font-size:x-large;
+
+}
+
+.formButton{
+  color: #060606;
+}
+.contact ul {
+    color: #07eeee;
+    padding: 10px 5px;
+    font-weight: bold;
+    padding: 10px 5px;
+    font-size:x-large;
+    text-align: center;
+
+}
+
+.about-contact {
+  grid-column: 1 /span 8;
+  grid-row: 6;
+  display: grid;
+  grid: 40px 1fr 1fr 40px 1fr 1fr/ repeat(8, 1fr);
+  grid-template-areas: "about" "contact";
+  align-content: space-around;
+
+}
+
+
+
+p {
+    font-size: 15px;  
+    line-height: 1.625;
+    padding: 20px;
+}
+.para-blog p{
+  margin-top: 0;
+  margin-bottom: .75rem;
+}
+
+h2{
+    text-align: center;
+}
+.formStyle { 
+        padding: 10px; 
+        width: 400px; 
+        margin-bottom: 20px; 
+        border-bottom-width: 1px; 
+        border-bottom-style: solid; 
+        border-bottom-color: #030303; 
+        border-top-style: none; 
+        border-right-style: none; 
+        border-left-style: none; 
+        font-size: 1em;
+        font-weight: 100%;
+        color: #ffffff;
+        
+      }
+
+  div {
+    width: 800px;
+    margin: auto;
+  }  
+
+  h3 {
+        text-align: center;
+       
+      }
+
+.avatar-img{
+    padding-top: 15px;
+    align-items:center;
+}
+
+h1{
+    
+    font-family: 'Josefin Sans', sans-serif;
+    /* text-transform: uppercase;  */
+    text-align:center;
+    /* font-size:smaller; */
+}
+
+
+.highlight {
+    display: flex;
+    margin-block-start: 0.83em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 2em;
+    font-weight: bold;
+    width: 30%;
+    font-size:1.4em; 
+    text-align:center; 
+    flex-direction: row;
+    font-family: Georgia,Times,Times New Roman,serif;
+    letter-spacing: -.045em;
+    margin-bottom: 0.8em;
+    padding: 35px;
+}
+
+
+
+
+footer {
+    grid-column: col-start 1/ span 8; 
+    grid-row:7 ; 
+    color: #e9e9e9;
+    padding:  25px; 
+    font-size: 15px;
+    background-color: rgb(11, 11, 11); 
+    color: #e9e9e9;
+    display: block; 
+    /* overflow: auto; */
+}
+
+/* Adjust navigation */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;  
+    text-align: right; 
+}
+
+ul li {
+    list-style-type: none;
+    align-items: right;
+    text-align: right; 
+}
+
+
+.about p, .contact p {
+    color: #e9e9e9;
+}
+
+.contact li {
+    display: inline;
+    text-align: right;
+
+}
+
+
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #030303;
+}
+
+.about p,.contact p {
+  color: #e9e9e9;
+}
+
+textarea.form-control {
+  resize:horizontal;
+  height: 130px;
+}
+textarea.form-control {
+  height: auto;
+}
+.form-control {
+  padding: 50px 50px;
+  font-size: 16px;
+  height: auto;
+  box-shadow: none !important;
+  border-top: 0;
+  border-left: 0;
+  border-right: 45px;
+  border-bottom: 2px solid rgba(9, 9, 9, 0.1);
+  border-radius: 0;
+  background-color: white;
+  color: #fff;
+}
+
+@media screen and (max-width:400px){
+  .header{
+      flex-direction: column;
+      padding: 15px 5px;
+      justify-content: center;
+  }
+  .logo{
+      margin-bottom: 15px;
+   }
+  .sumbit{
+      width:275px;
+  } 
+}
+
+@media (min-width: 700px) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+  .about-contact {
+      display: grid;
+      grid: 40px 1fr / repeat(8, 1fr);
+      grid-template-areas: "about" "contact";
+  }
+}
+  .about {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 2;
+  } 
+
+  .contact {
+      grid-column: 5 / span 4;
+      grid-row: 1 / span 2;
+
+  }
+
+
+@media (min-width: 800px) {
+  .main-nav {
+
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  h1 {
+      font-size: 3rem;
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+  .highlight {
+    font-size: 1rem;
+          }
+          h2{
+              text-align: center;
+          }
+  
+  }
+  
+
+
+
+
+
+
+
+

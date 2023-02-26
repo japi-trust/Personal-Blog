@@ -1,0 +1,270 @@
+body {
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    background-color: #cfcfd4;
+}
+
+.logo {
+    width: 100%;
+    object-fit: cover;  
+    text-align: left;  
+    align-items:flex-start;
+    padding: 2px;
+    margin: 1px 2px; 
+   
+  }
+
+
+.logo img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+img{
+    max-width:  100%;
+    height: auto;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #07eeee;
+}
+
+a:hover {
+    color: #c3e6fc;
+}
+
+a {
+    text-decoration: none;
+}
+
+.blog-titlep{
+    font-variant: small-caps;
+    color: black
+}
+
+
+nav {
+    grid-column: col-start 1 /span 8;
+    grid-row: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.hero {
+    grid-column: col-start 1/ 7;
+    grid-row: row 2 / span 2;
+    padding: 1rem 1rem;
+    display: flex;
+
+}
+
+.hero-text {
+    grid-column: col-start 1/9;
+    grid-row: row 2 / span 2;
+    text-align: center;
+
+}
+
+.blog {
+    grid-column: col-start 1 / span 8;
+    grid-row: 4 / span 2;
+    display: grid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.blog-title {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.blog-items {
+    grid-column: 1 / 9;
+    grid-row: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.about {
+    grid-area: about;
+}
+.about{
+    grid-column: 1 / span;
+    grid-row: 4 / span;
+}
+
+.contact {
+    grid-column: 1 / span 8;
+    grid-row: 4 / span 3;
+    grid-area: contact;
+}
+
+.footer {
+    grid-column: col-start 1/ span 8;
+    grid-row: 7;
+}
+main {
+    margin-bottom: 2rem;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.main-nav a {
+    box-sizing:content-box;
+    padding: 9.5rem 2rem;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    justify-content:space-evenly;
+    padding-top: 1px;
+    z-index: 1;
+}
+
+
+.blog-items img {
+    width: 400px;
+    height: 250px;
+
+}
+
+figcaption {
+    margin: 5px 10px;
+}
+
+.blog {
+    background-color: #79797c;
+  
+}
+
+nav,
+.about-contact {
+    background-color: rgb(1, 1, 1);
+}
+
+.about,.contact,.blog {
+    color: rgb(8, 245, 245);
+    padding: 10px 5px;
+    font-size:x-large;
+    text-align: center;
+}
+
+.hero {
+    height: 250px;
+    color:#FFF;
+    background-color:#0b0b0b;
+
+}
+
+
+.hero-line::after {
+    content: '';
+    width: 250px;
+    display: block;
+    position: relative;
+    border-bottom: 5px solid black;
+    margin-top: 20px;
+    font-size: small;
+    align-items: center;
+}
+
+
+ul li a i {
+    margin-right: 20px;
+    padding-top: 15px;
+
+}
+
+.contact li { 
+    display: inline; 
+} 
+
+footer {
+    background-color: black;
+    color:#FFF;
+    padding-left: 10px;
+    grid-column: col-start 1/ span 8; 
+    grid-row: 7; 
+    background-color: black;
+    padding-bottom:   45px; 
+    font-size: 15px;
+    text-align:start;
+    align-items:flex-start; 
+
+}
+
+
+@media only screen and (min-width: 510px) {
+    .hero {
+        background: linear-gradient( rgba(0, 0, 0, 0.40),
+        rgba(0, 0, 0, 0.40)),
+        url('../image/hero.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+    }
+    .hero-line::after {
+        border-bottom-color: #FFF;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    } 
+
+}
+
+@media (min-width: 700px) {
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 2;
+    }
+
+    .contact {
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 2;
+
+    }
+
+} 
+
+@media (min-width: 800px) {
+    .main-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+} 
